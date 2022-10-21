@@ -28,9 +28,9 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
 
-        var firstName ="Петров"
-        var compani ="compani"
-        var nameS = findViewById<TextView>(R.id.title_name)
+        val firstName ="Петров"
+        val compani ="compani"
+        val nameS = findViewById<TextView>(R.id.title_name)
         nameS.text = firstName
         val nameImg = findViewById<TextView>(R.id.textView3)
         nameImg.text = firstName[0].toString()
