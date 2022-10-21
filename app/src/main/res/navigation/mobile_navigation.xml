@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/profil">
+
+    <fragment
+        android:id="@+id/obrasenie"
+        android:name="com.example.maketa.obrasenie"
+        android:label="fragment_obrasenie"
+        tools:layout="@layout/fragment_obrasenie" />
+    <fragment
+        android:id="@+id/profil"
+        android:name="com.example.maketa.profil"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" />
+
+</navigation>
