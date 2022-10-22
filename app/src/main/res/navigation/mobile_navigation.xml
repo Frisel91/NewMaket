@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_obrasenie" />
     <fragment
         android:id="@+id/profil"
-        android:name="com.example.maketa.profil"
+        android:name="com.example.maketa.Profile"
         android:label="fragment_profil"
         tools:layout="@layout/fragment_profil" />
 

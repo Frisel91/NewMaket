@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#F8F8F8</color>
     <color name="rad">#D32F2F</color>
+    <color name="text_black">#333333</color>
 </resources>
