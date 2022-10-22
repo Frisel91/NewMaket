@@ -2,6 +2,7 @@ package com.example.maketa
 
 import android.app.Activity
 import android.os.Bundle
+import android.text.TextUtils.replace
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -9,13 +10,17 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
+import androidx.fragment.app.FragmentManager
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.coroutines.selects.select
+import java.util.*
 
 
 class Profile : Fragment() {
@@ -44,7 +49,6 @@ class Profile : Fragment() {
         companiName.text =compani
         nameS.text = firstName
 
-
         val buttonAlert = view.findViewById<Button>(R.id.button)
         buttonAlert.setOnClickListener{
             val builder = AlertDialog.Builder(view.context)
@@ -63,8 +67,7 @@ class Profile : Fragment() {
             builder.setOnShowListener {
                 builder.getButton(AlertDialog.BUTTON_POSITIVE).setOnClickListener {
                     builder.cancel()
-
-                  //  navView.selectedItemId = R.id.obrasenie
+                    findNavController().navigate(R.id.action_profil_to_obrasenie)
                 }
             }
 
